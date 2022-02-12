@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://debarshib-flixui.netlify.app/lib/index.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Signup</title>
+  </head>
+  <body class="min-h-screen">
+    <nav class="bg-white">
+      <div class="max-w-85 mx-auto d-flex">
+        <ul>
+          <li class="text-16">
+            <a href="/">Flixcart</a>
+          </li>
+        </ul>
+        <ul class="ml-auto text-12">
+          <li><a href="/wishlist.html">WishList</a></li>
+          <li><a href="/cart.html">Cart</a></li>
+          <li><a href="/login.html">Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="d-flex content-center items-center">
+      <form class="w-26 loginform bg-white p-2" novalidate>
+        <h5 class="text-center mb-1">Signup</h5>
+        <div class="mb-1">
+          <label for="email" class="d-block text-12 mb-half"
+            >Email address</label
+          >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="johndoe@gmail.com"
+            class="w-full p-1"
+          />
+        </div>
+        <div class="mb-1">
+          <label for="password" class="d-block text-bold text-12 mb-half"
+            >Password</label
+          >
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="*****"
+            class="w-full p-1"
+          />
+        </div>
+        <div class="mb-1 d-flex content-between">
+          <p>Remember me?</p>
+          <p>Forgot Password</p>
+        </div>
+        <div class="mb-1">
+          <label>
+            <input type="checkbox" />
+            I accept all Terms & Conditions
+          </label>
+        </div>
+        <button class="btn btn-primary w-full mb-2">Create new account</button>
+        <div class="flex content-center text-center">
+          <a href="/login.html">Already have an account</a>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
