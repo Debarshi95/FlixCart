@@ -52,3 +52,15 @@ input[type="radio"] {
 .flex-1 {
   flex: 1;
 }
+
+.mb-half {
+  margin-bottom: 0.5rem;
+}
+
+input {
+  font-size: 1rem;
+  outline: none;
+  border-radius: 4px;
+  background-color: var(--color-paper);
+  border: 1px solid var(--color-paper);
+}
