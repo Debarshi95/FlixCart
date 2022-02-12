@@ -4,12 +4,14 @@
 
 html {
   --color-light-gray: #bdbdbd;
+  --color-paper: #f7f7f7;
 }
 body {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   font-family: "Lato", "Courier New", Courier, monospace;
+  background-color: var(--color-paper);
 }
 * {
   box-sizing: border-box;
@@ -42,4 +44,11 @@ span {
 input[type="checkbox"],
 input[type="radio"] {
   cursor: pointer;
+}
+
+.bg-white {
+  background-color: var(--color-white);
+}
+.flex-1 {
+  flex: 1;
 }
