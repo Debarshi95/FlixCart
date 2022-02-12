@@ -1,0 +1,12 @@
+.card-wrapper {
+  height: 18rem;
+  flex: 1;
+}
+.card-wrapper:first-child {
+  margin-right: 2rem;
+}
+@media screen and (max-width: 600px) {
+  .card-wrapper {
+    margin-right: 0;
+  }
+}

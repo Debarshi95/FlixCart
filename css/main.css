@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import "./home.css";
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", "Courier New", Courier, monospace;
+}
+* {
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  display: inline-block;
+  padding: 1rem;
+  /* background: #000; */
+  width: 6rem;
+  text-align: center;
+}
