@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://debarshib-flixui.netlify.app/lib/index.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Products</title>
+  </head>
+  <body class="max-w-90 mx-auto mb-4">
+    <nav class="d-flex">
+      <ul>
+        <li class="text-16">
+          <a href="/">Flixcart</a>
+        </li>
+      </ul>
+      <ul class="ml-auto text-12">
+        <li><a href="/wishlist.html">WishList</a></li>
+        <li><a href="/cart.html">Cart</a></li>
+        <li><a href="/login.html">Login</a></li>
+      </ul>
+    </nav>
+    <main class="grid grid-sidebar gap-16">
+      <aside>
+        <div class="d-flex items-center content-between">
+          <h5>Filters</h5>
+          <p class="">Clear</p>
+        </div>
+        <div class="my-1">
+          <input type="range" name="price" min="0" max="2000" id="price" />
+        </div>
+        <div class="my-1">
+          <h6>Category</h6>
+          <label class="d-block my-1">
+            <input type="checkbox" name="men" id="men" />
+            Mens Shirt
+          </label>
+          <label class="d-block my-1">
+            <input type="checkbox" name="women" id="women" />
+            Womens Shirt
+          </label>
+        </div>
+        <div class="my-1">
+          <h6>Rating</h6>
+          <label class="d-block my-1">
+            <input type="radio" name="4-stars" />
+            4 stars & above
+          </label>
+          <label class="d-block my-1">
+            <input type="radio" name="3-stars" />
+            3 stars & above
+          </label>
+          <label class="d-block my-1">
+            <input type="radio" name="2-stars" />
+            2 stars & above
+          </label>
+          <label class="d-block my-1">
+            <input type="radio" name="1-stars" />
+            1 star & above
+          </label>
+        </div>
+
+        <div class="my-1">
+          <h6>Sort By</h6>
+          <label class="d-block my-1">
+            <input type="radio" name="low" />
+            Price <span>Low to High</span>
+          </label>
+          <label class="d-block my-1">
+            <input type="radio" name="high" />
+            Price <span>High to Low</span>
+          </label>
+        </div>
+      </aside>
+      <section class="wrapper">
+        <div class="d-flex items-center mb-1">
+          <h4>Showing all Products</h4>
+          <p class="ml-1 text-bold">Showing 8 Products</p>
+        </div>
+        <div class="products-container grid gap-16 grid-column-4">
+          <div class="card">
+            <img src="./img/shirt2.jpeg" alt="shirt1" class="img" />
+            <div
+              class="card-content d-flex flex-col content-center text-center"
+            >
+              <h6>Mens Premium Shirt</h6>
+              <p class="text-bold">Rs. <span>2000</span></p>
+              <button class="btn btn-primary">Go to cart</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./img/shirt2.jpeg" alt="shirt1" class="img" />
+            <div
+              class="card-content d-flex flex-col content-center text-center"
+            >
+              <h6>Mens Premium Shirt</h6>
+              <p class="text-bold">Rs. <span>2000</span></p>
+              <button class="btn btn-primary">Go to cart</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./img/shirt2.jpeg" alt="shirt1" class="img" />
+            <div
+              class="card-content d-flex flex-col content-center text-center"
+            >
+              <h6>Mens Premium Shirt</h6>
+              <p class="text-bold">Rs. <span>2000</span></p>
+              <button class="btn btn-primary">Go to cart</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./img/shirt2.jpeg" alt="shirt1" class="img" />
+            <div
+              class="card-content d-flex flex-col content-center text-center"
+            >
+              <h6>Mens Premium Shirt</h6>
+              <p class="text-bold">Rs. <span>2000</span></p>
+              <button class="btn btn-primary">Go to cart</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./img/shirt2.jpeg" alt="shirt1" class="img" />
+            <div
+              class="card-content d-flex flex-col content-center text-center"
+            >
+              <h6>Mens Premium Shirt</h6>
+              <p class="text-bold">Rs. <span>2000</span></p>
+              <button class="btn btn-primary">Go to cart</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./img/shirt2.jpeg" alt="shirt1" class="img" />
+            <div
+              class="card-content d-flex flex-col content-center text-center"
+            >
+              <h6>Mens Premium Shirt</h6>
+              <p class="text-bold">Rs. <span>2000</span></p>
+              <button class="btn btn-primary">Go to cart</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./img/shirt2.jpeg" alt="shirt1" class="img" />
+            <div
+              class="card-content d-flex flex-col content-center text-center"
+            >
+              <h6>Mens Premium Shirt</h6>
+              <p class="text-bold">Rs. <span>2000</span></p>
+              <button class="btn btn-primary">Go to cart</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./img/shirt2.jpeg" alt="shirt1" class="img" />
+            <div
+              class="card-content d-flex flex-col content-center text-center"
+            >
+              <h6>Mens Premium Shirt</h6>
+              <p class="text-bold">Rs. <span>2000</span></p>
+              <button class="btn btn-primary">Go to cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
