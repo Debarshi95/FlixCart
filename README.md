@@ -1,6 +1,6 @@
 # FlixCart
 
-#### A static E-commerce website layout (WIP)
+#### A static E-commerce website layout
 
 ## Demo
 
