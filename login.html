@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://debarshib-flixui.netlify.app/lib/index.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Login</title>
+  </head>
+  <body class="min-h-screen text-black">
+    <nav class="bg-white">
+      <div class="max-w-85 mx-auto d-flex items-center content-between">
+        <ul>
+          <li class="text-16">
+            <a href="/">Flixcart</a>
+          </li>
+        </ul>
+        <div class="px-2 max-w-85">
+          <input
+            type="search"
+            placeholder="Search"
+            class="w-full p-1 bg-white"
+          />
+        </div>
+        <ul class="text-12 d-flex">
+          <li><a href="/login.html">Login</a></li>
+          <li class="d-inline-block">
+            <a href="/wishlist.html" class="relative">
+              <div class="far fa-heart relative">
+                <div class="badge-red">4</div>
+              </div>
+            </a>
+          </li>
+          <li class="d-inline-block">
+            <a href="/cart.html" class="relative">
+              <div class="fas fa-shopping-cart">
+                <div class="badge-red">1</div>
+              </div>
+              Cart
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="d-flex content-center items-center">
+      <form class="w-26 loginform bg-white p-2" novalidate>
+        <h5 class="text-center mb-1">Login</h5>
+        <div class="mb-1">
+          <label for="email" class="d-block text-12 mb-half"
+            >Email address</label
+          >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="johndoe@gmail.com"
+            class="w-full p-1"
+          />
+        </div>
+        <div class="mb-1">
+          <label for="password" class="d-block text-12 mb-half">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="*****"
+            class="w-full p-1"
+          />
+        </div>
+        <div class="mb-1 d-flex content-between">
+          <p>Remember me?</p>
+          <p>Forgot Password</p>
+        </div>
+        <button class="btn btn-primary w-full mb-2">Login</button>
+        <div class="flex content-center text-center">
+          <a href="/signup.html">Create new account</a>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
