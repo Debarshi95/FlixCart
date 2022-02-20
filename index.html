@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
       href="https://debarshib-flixui.netlify.app/lib/index.css"
     />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Flixcart</title>
   </head>
-  <body class="min-h-screen">
+  <body class="min-h-screen text-black">
     <nav class="bg-white">
       <div class="max-w-85 mx-auto d-flex items-center content-between">
         <ul>
@@ -20,42 +27,65 @@
           </li>
         </ul>
         <div class="px-2 max-w-85">
-          <input type="search" placeholder="Search" class="w-full p-1" />
+          <input
+            type="search"
+            placeholder="Search"
+            class="w-full p-1 bg-white"
+          />
         </div>
         <ul class="text-12 d-flex">
-          <li><a href="/wishlist.html">WishList</a></li>
-          <li><a href="/cart.html">Cart</a></li>
           <li><a href="/login.html">Login</a></li>
+          <li class="d-inline-block">
+            <a href="/wishlist.html" class="relative">
+              <div class="far fa-heart relative">
+                <div class="badge-red">4</div>
+              </div>
+            </a>
+          </li>
+          <li class="d-inline-block">
+            <a href="/cart.html" class="relative">
+              <div class="fas fa-shopping-cart">
+                <div class="badge-red">1</div>
+              </div>
+              Cart
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
-    <main class="max-w-90 mx-auto m-4">
-      <section class="bg-secondary mb-4 h-20 w-full"></section>
-      <section class="d-flex">
-        <article class="bg-secondary p-2 d-flex flex-wrap card-wrapper">
-          <img src="./img/shirt2.jpeg" alt="Shirt2" class="img w-16" />
-          <div class="card d-flex flex-col content-between ml-2">
-            <div>
-              <p>NEW ARRIVALS</p>
-              <h5>Summer Collection</h5>
+    <main class="mx-auto">
+      <section class="mb-4 h-24 w-full">
+        <img src="/img/banner.png" alt="Banner" />
+      </section>
+      <section class="d-flex my-4 max-w-90 mx-auto">
+        <article class="card-wrapper text-black p-2">
+          <a href="/products.html" class="d-flex">
+            <img src="./img/shirt2.jpeg" alt="Shirt2" class="img w-16" />
+            <div class="d-flex flex-col content-between ml-2">
+              <header>
+                <p class="text-14 text-bold">NEW ARRIVALS</p>
+                <h5 class="mt-2 text-12">Summer Collection</h5>
+              </header>
+              <p class="py-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
             </div>
-            <p class="py-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
-          </div>
+          </a>
         </article>
 
-        <article class="d-flex card-wrapper bg-secondary p-2">
-          <img src="./img/shirt3.jpeg" alt="Shirt3" class="img w-16" />
-          <div class="card d-flex flex-col content-between ml-2">
-            <div>
-              <p>NEW ARRIVALS</p>
-              <h5>Summer Collection</h5>
+        <article class="card-wrapper text-black p-2">
+          <a href="/products.html" class="d-flex">
+            <img src="./img/shirt3.jpeg" alt="Shirt3" class="img w-16" />
+            <div class="d-flex flex-col content-evenly ml-2 flex-1">
+              <header>
+                <p class="text-14 text-bold">NEW ARRIVALS</p>
+                <h5 class="mt-2 text-12">Summer Collection</h5>
+              </header>
+              <p class="py-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
             </div>
-            <p class="py-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
-          </div>
+          </a>
         </article>
       </section>
     </main>

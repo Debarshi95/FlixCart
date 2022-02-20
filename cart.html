@@ -8,10 +8,17 @@
       rel="stylesheet"
       href="https://debarshib-flixui.netlify.app/lib/index.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <title>Cart</title>
   </head>
-  <body class="min-h-screen">
+  <body class="min-h-screen text-black">
     <nav class="bg-white">
       <div class="max-w-85 mx-auto d-flex items-center content-between">
         <ul>
@@ -20,42 +27,60 @@
           </li>
         </ul>
         <div class="px-2 max-w-85">
-          <input type="search" placeholder="Search" class="w-full p-1" />
+          <input
+            type="search"
+            placeholder="Search"
+            class="w-full p-1 bg-white"
+          />
         </div>
         <ul class="text-12 d-flex">
-          <li><a href="/wishlist.html">WishList</a></li>
-          <li><a href="/cart.html">Cart</a></li>
           <li><a href="/login.html">Login</a></li>
+          <li class="d-inline-block">
+            <a href="/wishlist.html" class="relative">
+              <div class="far fa-heart relative">
+                <div class="badge-red">4</div>
+              </div>
+            </a>
+          </li>
+          <li class="d-inline-block">
+            <a href="/cart.html" class="relative">
+              <div class="fas fa-shopping-cart">
+                <div class="badge-red">1</div>
+              </div>
+              Cart
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
-    <main class="grid grid-column-1 max-w-90 mx-auto">
+    <main class="grid grid-column-1 max-w-90 mx-auto text-black">
       <h5 class="text-center m-2">My Cart</h5>
-      <section class="w-full d-flex">
-        <div class="card d-flex mr-2 bg-white w-34">
-          <img src="./img/shirt2.jpeg" alt="shirt1" class="w-16" />
+      <section class="w-full d-flex content-evenly">
+        <div class="d-flex mr-2 bg-white w-34 bg-">
+          <img src="./img/shirt2.jpeg" alt="shirt1" class="w-18" />
           <div
             class="card-content d-flex flex-col content-between text-center py-1 px-2"
           >
-            <h6 class="mt-1 text-14">Mens Premium Shirt</h6>
+            <p class="mt-1 text-14">Mens Premium Shirt</p>
             <h6 class="text-bold mb-1 text-12">Rs. <span>2999</span></h6>
             <label> </label>
             <button class="btn btn-secondary">Remove from cart</button>
             <button class="btn btn-secondary-outlined">Move to wishlist</button>
           </div>
         </div>
-        <div class="p-2 bg-white flex-1">
+        <div class="p-2 bg-white w-20">
           <h5>Price Details</h5>
           <div class="my-1">
             <div class="d-flex content-between mb-1">
               <h6>Price</h6>
               <h6>999</h6>
             </div>
+            <hr class="hr-paper" />
             <div class="d-flex content-between mb-1">
               <h6>Discount</h6>
               <h6>999</h6>
             </div>
-
+            <hr class="hr-paper" />
             <div class="d-flex content-between mb-1">
               <h6>Total amount</h6>
               <h6>2000</h6>
